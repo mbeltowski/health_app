@@ -1,0 +1,219 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul>li{
+    display: flex;
+}
+.food_info_box{
+    display: flex;
+}
+.food_info_box > p{
+    padding: 10px;
+}
+
+.add_pora_dnia_btn{
+    display: inline-block;
+    padding: 2rem;
+    font-size: 2rem;
+    border: 1px solid #000;
+    border-radius: .7rem;
+
+    width: auto;
+
+    text-decoration: none;
+    color: black;
+
+    margin-top: 2rem;
+
+    border: none;
+    border-radius: 1rem;
+    border-left: 5px solid var(--color3-2);
+    border-right: 5px solid var(--color3-2);
+
+    background-color: #fff;
+}
+
+.back_btn{
+    margin-top: 6rem;
+    color: #000;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-bottom: 5px solid var(--color3-2);
+    border-radius: 1rem;
+    background-color: #fff;
+}
+form input, select{
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    flex-grow: 1;
+
+    width: 80%;
+
+    margin: .5rem;
+
+    background-color: #fff;
+    border: none;
+    border-radius: .8rem;
+    border-bottom: 5px solid var(--color3-2);
+}
+.add_pora_form{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    min-width: 400px;
+
+    border: .6rem solid var(--color3-2);
+    border-radius: 3rem;
+    background-color: var(--color3-2_hover);
+
+    box-shadow: 2px 2px 10px #999;
+
+    padding: 2.6rem;
+
+    font-size: 1.6rem;
+}
+.form_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#add_food_select_btn, .confirm_add{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid #000;
+    border-radius: .7rem;
+
+    width: auto;
+
+    text-decoration: none;
+    color: black;
+
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+
+    border: none;
+    border-radius: 1rem;
+    border-left: 5px solid var(--color3-2);
+    border-right: 5px solid var(--color3-2);
+
+    background-color: #fff;
+}
+.hide_form{
+    padding: 1rem;
+    background-color: #fff;
+    margin-top: .7rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.meals_container{
+    border: 4px solid var(--color3-2);
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.4rem;
+
+    font-size: 1.6rem;
+}
+.meals_container > h3{
+
+}
+.meals_container > ul{
+    padding: 1rem;
+    border-left: 5px solid var(--color3-2);
+    margin: 1.5rem 0;
+
+    background-color: #ececec;
+}
+.meals_container > ul > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food_amount_p{
+
+}
+.food_amount_p::after{
+    content: ' x';
+    padding-right: 1rem;
+}
+.meals_container > ul > li > p{
+
+}
+.food_info_box *::before{
+    font-weight: 500;
+}
+.food_calories::before{
+    content: 'kcal: ';
+}
+.food_proteins::before{
+    content: 'białka: ';
+}
+.food_fats::before{
+    content: 'tłuszcze: ';
+}
+.food_sugars::before{
+    content: 'cukry: ';
+}
+
+
+.summary_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.summary_box *::before{
+    font-weight: 500;
+    padding-right: 1rem;
+}
+
+.summary_box::before{
+    content: 'Suma składników: ';
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.summary_child:nth-child(1)::before{
+    content: 'kcal: ';
+}
+.summary_child:nth-child(2)::before{
+    content: 'białka: ';
+}
+.summary_child:nth-child(3)::before{
+    content: 'tłuszcze: ';
+}
+.summary_child:nth-child(4)::before{
+    content: 'cukry: ';
+}

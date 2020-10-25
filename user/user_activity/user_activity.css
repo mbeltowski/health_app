@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity_table{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+   min-width: 400px;
+
+   border: .6rem solid var(--color3-2);
+   border-radius: 3rem;
+   background-color: var(--color3-2_hover);
+
+   box-shadow: 2px 2px 10px #999;
+
+   padding: 2.6rem;
+}
+
+.activity_table img{
+    max-width: 90px;
+    margin: 2rem 0;
+
+    border: .3rem solid var(--color3-2);
+    border-radius: 1.6rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px var(--color3-2);
+ }
+ .activity_table td:nth-child(1){
+    border-left: 4px solid var(--color3-2);
+ }
+ .activity_table td{
+     position: relative;
+    padding: 10px;
+    border-right: 4px solid var(--color3-2);
+    width: 160px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+ }
+ .activity_table tr{
+     display: flex;
+ }
+
+ .activity_table tr:first-of-type td p:nth-child(1) {
+    font-size: 1.7rem;
+    font-weight: 600;
+ }
+
+ .activity_table tr:first-of-type td p:nth-child(2) {
+    font-size: 1.1rem;
+ }
+
+ .activity_table_btn{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid #000;
+    border-radius: .7rem;
+
+    text-decoration: none;
+    color: black;
+
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+
+    border: none;
+    border-radius: 1rem;
+    border-left: 5px solid var(--color3-2);
+    border-right: 5px solid var(--color3-2);
+
+    background-color: #fff;
+ }
+
+
+
+
+
+.activity_table tr:first-of-type td::after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    transform: translate(-50%);
+}
+
+.activity_table tr:first-of-type td:nth-child(1)::after {
+    background-color: #FF0000;
+}
+.activity_table tr:first-of-type td:nth-child(2)::after {
+    background-color: #FF7F00;
+}
+.activity_table tr:first-of-type td:nth-child(3)::after {
+    background-color: #FFFF00;
+}
+.activity_table tr:first-of-type td:nth-child(4)::after {
+    background-color: #00FF00;
+}
+.activity_table tr:first-of-type td:nth-child(5)::after {
+    background-color: #0000FF;
+}
+.activity_table tr:first-of-type td:nth-child(6)::after {
+    background-color: #2E2B5F;
+}
+.activity_table tr:first-of-type td:nth-child(7)::after {
+    background-color: #8B00FF;
+}

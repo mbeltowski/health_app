@@ -1,0 +1,139 @@
+*:focus{
+    outline: none;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.notes_container{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+form{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    min-width: 400px;
+
+    border: .6rem solid var(--color3-2);
+    border-radius: 3rem;
+    background-color: var(--color3-2_hover);
+
+    box-shadow: 2px 2px 10px #999;
+
+    padding: 2.6rem;
+
+    font-size: 1.6rem;
+}
+
+form label{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+form textarea{
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    flex-grow: 1;
+
+    width: 80%;
+    height: 10rem;
+    resize: none;
+    margin: .5rem;
+
+    background-color: #fff;
+    border: none;
+    border-radius: .8rem;
+    border-bottom: 5px solid var(--color3-2);
+}
+
+form input{
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    flex-grow: 1;
+
+    width: 80%;
+
+    margin: .5rem;
+
+    background-color: #fff;
+    border: none;
+    border-radius: .8rem;
+    border-bottom: 5px solid var(--color3-2);
+}
+
+.add_note_expire_date{
+    margin-top: .5rem;
+}
+
+.add_note_submit{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid #000;
+    border-radius: .7rem;
+
+    width: auto;
+
+    text-decoration: none;
+    color: black;
+
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+
+    border: none;
+    border-radius: 1rem;
+    border-left: 5px solid var(--color3-2);
+    border-right: 5px solid var(--color3-2);
+
+    background-color: #fff;
+}
+
+.note_box{
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 420px;
+
+    border: .6rem solid var(--color3-2);
+    border-radius: 3rem;
+    background-color: var(--color3-2_hover);
+
+    box-shadow: 2px 2px 10px #999;
+
+    padding: 2.6rem;
+
+    font-size: 1.6rem;
+}
+
+.note_title{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.note_content{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.note_create_date, .note_exp_date{
+    text-align: center;
+}

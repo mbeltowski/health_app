@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2{
+margin-bottom: 1.3rem;
+font-size: 3rem;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+   min-width: 400px;
+
+   border: .6rem solid var(--color3-2);
+   border-radius: 3rem;
+   background-color: var(--color3-2_hover);
+
+   box-shadow: 2px 2px 10px #999;
+
+   padding: 2.6rem;
+}
+
+table td:nth-child(1){
+    border-left: 4px solid var(--color3-2);
+}
+table td{
+    position: relative;
+    padding: 10px;
+    border-right: 4px solid var(--color3-2);
+    width: 160px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+table tr{
+    display: flex;
+}
+
+tr:first-child{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+table a{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid #000;
+    border-radius: .7rem;
+
+    text-decoration: none;
+    color: black;
+
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+
+    border: none;
+    border-radius: 1rem;
+    border-left: 5px solid var(--color3-2);
+    border-right: 5px solid var(--color3-2);
+
+    background-color: #fff;
+}
+
+ul{
+    padding: 0.7rem;
+    text-align: center;
+    list-style: none;
+    width: 90%;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+ul > li:first-child{
+    margin-top: .7rem;
+}
+ul > li{
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+    width: 100%;
+}
+
+
+table tr:first-of-type td::after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    transform: translate(-50%);
+}
+
+table tr:first-of-type td:nth-child(1)::after {
+    background-color: #FF0000;
+}
+table tr:first-of-type td:nth-child(2)::after {
+    background-color: #FF7F00;
+}
+table tr:first-of-type td:nth-child(3)::after {
+    background-color: #FFFF00;
+}
+table tr:first-of-type td:nth-child(4)::after {
+    background-color: #00FF00;
+}
+table tr:first-of-type td:nth-child(5)::after {
+    background-color: #0000FF;
+}
+table tr:first-of-type td:nth-child(6)::after {
+    background-color: #2E2B5F;
+}
+table tr:first-of-type td:nth-child(7)::after {
+    background-color: #8B00FF;
+}

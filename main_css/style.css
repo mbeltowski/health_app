@@ -1,0 +1,214 @@
+@import "../global_css/GLOBAL_style.css";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --nav_height: 80px;
+    --nav_bgc_color: #333;
+    --nav_btn_font_color: #fff;
+    --nav_btn_font_color_hover: #aaa;
+    font-size: 10px;
+}
+
+body{
+    background-color:  rgb(10, 10, 10);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+    color: var(--color4-1);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---VVV---nav---VVV--- */
+
+nav.main_page_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: var(--nav_height);
+    width: 100vw;
+    background-color: var(--color3-2);
+}
+nav > .main_page_nav_logo{
+    height:100%;
+    background-color: #fff;
+    border-radius: 2rem;
+}
+
+nav > .main_page_nav_btn_box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.main_page_nav_btn{
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.main_page_nav_btn:hover{
+    color: #555;
+}
+
+/* ---VVV---main---VVV--- */
+
+main{
+    width: 100vw;
+}
+
+.main_page_section{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 5rem;
+}
+
+.main_page_section:nth-child(1){
+    height: calc(100vh - var(--nav_height));
+}
+
+.main_page_section:last-of-type{
+    height: calc(100vh - var(--nav_height));
+}
+
+.main_page_section:nth-child(even){
+    background-color: var(--color4-4);
+    flex-direction: row;
+}
+
+.main_page_section:nth-child(odd){
+    background-color: var(--color4-3);
+    flex-direction: row-reverse;
+}
+
+.main_page_section_content_box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main_page_section_content_box > h1{
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+.main_page_section_content_box > h2{
+    font-size: 3rem;
+}
+
+.main_page_section_img_box{
+    width: 50%;
+}
+
+
+
+.main_page_section_icon_box{
+    font-size: 30rem;
+    display: flex;
+}
+
+.quote_icon:nth-child(1){
+    padding-top: 5rem;
+    margin-right: 3rem;
+    font-size: 20rem;
+}
+.quote_icon:nth-child(2){
+    padding-bottom: 5rem;
+    font-size: 20rem;
+}
+
+.main_page_section_next_button{
+    z-index: 1;
+    position: relative;
+    margin-top: 5rem;
+    background-color: #fff;
+    font-size: 2rem;
+    padding: 1.3rem 5rem;
+    border-radius: 1rem;
+    color:  var(--color4-1);
+    overflow: hidden;
+}
+/* .main_page_section_next_button:nth-child(odd)::after{
+    background-color: var(--color4-3);
+}
+.main_page_section_next_button:nth-child(even)::after{
+    background-color: var(--color4-4);
+} */
+.main_page_section_next_button::after{
+    background-color: var(--color4-1);
+    z-index: 1000;
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: calc(100% + 20px);
+    width: 40px;
+    height: 300%;
+    transform: skewX(-35deg);
+    transition-duration: .4s;
+}
+
+.main_page_section_next_button:hover::after{
+    left: -60px;
+}
+
+.section-hook1{
+    position: absolute;
+    top: -1000px;
+    left: 0;
+}
+.section-hook{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---VVV---footer---VVV--- */
+
+footer {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 300;
+    color: var(--color4-5);
+}

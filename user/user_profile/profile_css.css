@@ -1,0 +1,91 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+*:focus{
+    outline: none;
+}
+
+.profile_headers{
+    padding: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.profile_headers h2{
+    font-size: 1em;
+}
+.profile_headers h3{
+    font-size: .7em;
+}
+
+.profile_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    min-width: 400px;
+
+    border: .6rem solid var(--color3-2);
+    border-radius: 3rem;
+    background-color: var(--color3-2_hover);
+
+    box-shadow: 2px 2px 10px #999;
+
+    padding: 2.6rem;
+}
+
+.form_box{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form_box label{
+    font-size: 1.4rem;
+    width: 20%;
+}
+
+.form_box input, .profile_select_sex{
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    flex-grow: 1;
+
+    margin: .5rem;
+
+    background-color: #fff;
+    border: none;
+    border-radius: .8rem;
+    border-bottom: 5px solid var(--color3-2);
+}
+
+.form_box input:focus, .profile_select_sex:focus{
+    border-bottom: 5px solid var(--color3-2_darker);
+}
+
+.form_box input, .profile_select_sex, .profile_save_btn{
+    box-shadow: 0 0 1rem var(--color3-2);
+}
+
+.profile_select_sex > option{
+    padding: 10px;
+}
+
+.profile_save_btn{
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+
+    border: none;
+    border-radius: 1rem;
+    border-left: 5px solid var(--color3-2);
+    border-right: 5px solid var(--color3-2);
+
+    background-color: #fff;
+}

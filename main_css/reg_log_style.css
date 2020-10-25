@@ -1,0 +1,234 @@
+@import "../global_css/GLOBAL_style.css";
+
+:root{
+    --bgc_color_1: #eee;
+    --bgc_color_2: #f3f3f3;
+    --bgc_color_3: rgb(38, 128, 189);
+    --text_color_1: rgb(10, 10, 10);
+    --text_color_1_hover: rgb(71, 71, 71);
+    --text_color_2: #eee;
+    --bgc_color_2_hover: rgb(17, 48, 68);
+    --btn_bgc_color_1: rgb(38, 128, 189);
+    --btn_bgc_color_1_hover: rgb(17, 48, 68);
+
+}
+/* --------------------- REGISTER vvvvv ---------------------- */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(---bgc_color_1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    font-family: 'Ubuntu', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    min-width: 400px;
+    width: 35%;
+    padding: 3rem;
+    border: .3rem solid var(--bgc_color_3);
+    border-radius: 3rem;
+    background-color: var(--bgc_color_2);
+    font-size: 2rem;
+
+    box-shadow: .7rem .7rem 3rem #888;
+}
+
+input:focus, select:focus{
+    outline: none;
+}
+
+.form_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding: 1rem;
+}
+
+.register_select_form_box{
+    justify-content: center;
+}
+.reg_country_select{
+    padding:.8rem;
+    border: 3px solid var(--bgc_color_3);
+    border-radius: 1rem
+    ;
+}
+.form_box > label{
+    width: 30%;
+    height: 3rem;
+    text-align: center;
+}
+
+.form_box .type_in_input{
+    width:70%;
+    height: 4rem;
+    border-radius: 1rem;
+    padding: 0 1.3rem;
+
+    background-color: var(---bgc_color_2);
+    border: .3rem solid var(--bgc_color_3);
+    box-shadow: 0 0 .7rem #777;
+    flex-grow: 1;
+    transition: .3s;
+    font-size: 1.5rem;
+}
+
+.form_box .type_in_input:focus{
+    border-color: var(--bgc_color_2_hover);
+}
+
+.password_box, .nickname_box{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pass_visibility_icon{
+    padding: 0 .5rem;
+    display: block;
+    flex-grow: 1;
+}
+
+.reg_submit{
+    position: relative;
+    margin-top: 1rem;
+    padding: 1.4rem 2.2rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: var(--btn_bgc_color_1);
+    color: var(--text_color_2);
+    transition: .3s;
+    box-shadow: 0 0 .6rem #777;
+    font-weight: 700;
+}
+
+.reg_submit:hover{
+    box-shadow: .5rem .5rem 1.2rem #777;
+    background-color: var(--btn_bgc_color_1_hover);
+    cursor: pointer;
+}
+
+
+/* --------------------- vvvvv LOGIN vvvvv ---------------------- */
+
+.login_submit{
+    position: relative;
+    margin-top: 1rem;
+    padding: 1.1rem 2rem;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: var(--btn_bgc_color_1);
+    color: var(--text_color_2);
+    transition: .3s;
+    box-shadow: 0 0 .6rem #777;
+    font-weight: 700;
+}
+
+.login_submit:hover{
+    box-shadow: .5rem .5rem 1.2rem #777;
+    background-color: var(--btn_bgc_color_1_hover);
+    cursor: pointer;
+}
+.red_star::before {
+    content: '*';
+    padding-right: .4rem;
+    color: rgb(173, 78, 78);
+}
+.reg_legend, .log_legend {
+    color: rgb(173, 78, 78);
+}
+
+.main_page_return {
+    padding-top: 2rem;
+    text-decoration: none;
+    color: var(--text_color_1);
+    transition: .3s;
+}
+.main_page_return::before{
+    content: '\00ab';
+    transition: .3s;
+    padding-right: .7rem;
+    font-size: 3rem;
+    display: inline-block;
+}
+.main_page_return:hover{
+    color: var(--text_color_1_hover);
+}
+.main_page_return:hover:before{
+    padding-right: 1.4rem;
+}
+
+/* ---------------------------------------------------------- */
+.profile_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile_form .form_box input{
+    width:70%;
+    height: 4rem;
+    border-radius: 1rem;
+    padding: 0 1.3rem;
+
+    background-color: var(---bgc_color_2);
+    border: .3rem solid var(--bgc_color_3);
+    box-shadow: 0 0 .7rem #777;
+    flex-grow: 1;
+    transition: .3s;
+    font-size: 1.5rem;
+}
+/* ---------------------------------------------------------- */
+
+@media (max-width: 500px) {
+    :root{
+        font-size: 7px;
+    }
+
+    form{
+        width: 100vw;
+        height: 97vh;
+        min-width: 0;
+        border: none;
+        box-shadow: 0 0 3rem #888;
+    }
+    .login_form{
+        max-width: 90vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 1366px) {
+    :root{
+        font-size: 8px;
+    }
+
+    form{
+        width: 100vw;
+        height: auto;
+        max-width: 60vw;
+    }
+    .login_form{
+        max-width: 35vw;
+        height: auto;
+    }
+}

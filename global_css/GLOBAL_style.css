@@ -1,0 +1,31 @@
+@import "../fonts_import_css/fonts_import.css";
+:root{
+     font-size:10px;
+    --global_bgc_color_1: rgb(38, 128, 189);
+
+    --color1-1: #edc7b7;
+    --color1-2: #eee2dc;
+    --color1-3: #bab2b5;
+    --color1-4: #123c69;
+    --color1-5: #ac3b61;
+
+    --color2-1: #fbe8a6;
+    --color2-2: #f4976c;
+    --color2-3: #303c6c;
+    --color2-4: #b4dfe5;
+    --color2-5: #d2fdff;
+
+    --color3-1: #f78888;
+    --color3-2: #f3d250;
+    --color3-2_darker: #dab41d;
+    --color3-3: #ececec;
+    --color3-4: #90ccf4;
+    --color3-5: #5da2d5;
+    --color3-2_hover: #f7e396;
+
+    --color4-1: #026670;
+    --color4-2: #9fedd7;
+    --color4-3: #fef9c7;
+    --color4-4: #fce181;
+    --color4-5: #edeae5;
+}

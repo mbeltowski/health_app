@@ -1,0 +1,142 @@
+@import "../fonts_import_css/fonts_import.css";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --nav_height: 80px;
+    --nav_bgc_color: #333;
+    --nav_btn_font_color: #fff;
+    --nav_btn_font_color_hover: #aaa;
+
+    font-size: 10px;
+}
+
+body{
+    background-color:  rgb(10, 10, 10);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---VVV---nav---VVV--- */
+
+nav.main_page_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: var(--nav_height);
+    width: 100vw;
+    background-color: var(--nav_bgc_color);
+}
+nav > .main_page_nav_logo{
+    /* height: var(--nav_height); */
+    height:100%;
+}
+
+nav > .main_page_nav_btn_box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.main_page_nav_btn{
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: var(--nav_btn_font_color);
+    font-weight: 300;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.main_page_nav_btn:hover{
+    color: var(--nav_btn_font_color_hover);
+}
+
+/* ---VVV---main---VVV--- */
+
+main{
+    width: 100vw;
+}
+
+.main_page_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main_page_section:nth-child(1){
+    height: calc(100vh - var(--nav_height));
+}
+
+.main_page_section:nth-child(even){
+    background-color: #000;
+    flex-direction: row;
+}
+
+.main_page_section:nth-child(odd){
+    background-color: #aaa;
+    flex-direction: row-reverse;
+}
+
+.main_page_section_content_box{
+    width: 50%;
+}
+
+.main_page_section_img_box{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---VVV---footer---VVV--- */
+
+footer {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 300;
+}
